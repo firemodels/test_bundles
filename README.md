@@ -1,4 +1,4 @@
-# test_bundles
+# CFAST, FDS and Smokeview test bundles
 This repo contains test bundles for fds, cfast and smokeview.
 
 * [link to FDS readme page](README_FDS.md)
