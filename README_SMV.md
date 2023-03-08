@@ -1,2 +1,2 @@
-# test_bundles
-This page will contain informaion on smokeview test bundles.
+# smokeview test bundles
+This page will contain information on smokeview test bundles.
