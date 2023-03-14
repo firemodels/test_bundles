@@ -5,6 +5,7 @@ This repo contains test bundles and manuals for
 [cfast](https://github.com/firemodels/test_bundles/releases/tag/CFAST_TEST).
 The scripts firebot, smokebot and cfastbot run daily testing these programs.
 If the tests pass then test bundles are built
-with the repo revision used by the bots. 
+with the repo hash used by the bots. The repo hashes used are found in the files CFAST_HASH, FDS_HASH and SMOKEVIEW_HASH
+and also in the release title along with the date and time when the commit was made for that hash.
 
 <!-- comment -->
