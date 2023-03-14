@@ -1,5 +1,5 @@
 # CFAST, FDS and Smokeview test bundles
-The [releases(]https://github.com/firemodels/test_bundles/releases)
+The [releases](https://github.com/firemodels/test_bundles/releases)
 in this repo contains test bundles and manuals for
 [fds](https://github.com/firemodels/test_bundles/releases/tag/FDS_TEST),
 [smokeview](https://github.com/firemodels/test_bundles/releases/tag/SMOKEVIEW_TEST), and
