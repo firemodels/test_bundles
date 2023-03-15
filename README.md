@@ -13,14 +13,35 @@ These hashes are also found in the release title along with the date and time wh
 
 ### Workflow
 
-If a bot passes, it copies the manuals and the repo hashes it used to repo using a `gh` command such as
+The bot and bundle scripts use the github command line tool `gh` to copy files to and from Github releases.
+If a bot passes, it uploads manuals and repo hashes using a `gh` command such as
 
 ```
    gh release upload tag file -R github.com/firemodels/test_bundles --clobber
 ```
 
 where file is the file that is uploaded and tag is `CFAST_TEST`, `FDS_TEST` or `SMOKEVIEW_TEST` depending on 
-whether the file is a cfast, fds or smokeview manual.
+whether the file is for a cfast, fds or smokeview bundle.  Repo hashes are uploaded the same way.
+
+Bundle scripts download hashes and manuals from github releases using a similar `gh` command such as
+
+```
+ gh release download tag -p file -R github.com/firemodels/test_bundles -D directory --clobber
+```
+
+where file is the file downloaded, tag as before is `CFAST_TEST`, `FDS_TEST` or `SMOKEVIEW_TEST` depending on 
+whether the file is for a cfast, fds or smokeview bundle and directory is the directory where the file is downloaded too.
+
+The release title is modified whenever a bundle is uplooaded to a Github release to indicate the repo hash and repo revision date.
+The `gh` command used to do this is 
+
+```
+gh release edit tag -t "title of release" -R github.com/firemodels/test_bundles
+```
+
+Note, in each `gh` command firemodels could be changed to your user name (assuming you forked the test_bundles repo) to 
+make changes to your forked test_bundles repo rather than the central repo version.
+
 
 
 
