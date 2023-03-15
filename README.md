@@ -1,15 +1,18 @@
 # CFAST, FDS and Smokeview test bundles
 The [releases](https://github.com/firemodels/test_bundles/releases)
-in this repo contains test bundles and manuals for
-[cfast](https://github.com/firemodels/test_bundles/releases/tag/CFAST_TEST),
-[fds](https://github.com/firemodels/test_bundles/releases/tag/FDS_TEST), and
+in this repo contain test bundles and manuals for the fire models
+[cfast](https://github.com/firemodels/test_bundles/releases/tag/CFAST_TEST) and
+[fds](https://github.com/firemodels/test_bundles/releases/tag/FDS_TEST), and the visualization program
 [smokeview](https://github.com/firemodels/test_bundles/releases/tag/SMOKEVIEW_TEST).
-The scripts cfastbot, firebot and smokebot found in the 
-[bot repo](https://github.com/firemodels/bot) 
-run daily, testing these three programs.
-If the tests pass then test bundles are built
-with the repo hash used by the bots when running their tests.
-The hashes used to checkout the repos are found in the files CFAST_HASH, FDS_HASH and SMOKEVIEW_HASH
-and also found in the release title along with the date and time when the commit was made for that hash.
+These programs are tested daily by the scripts cfastbot, firebot and smokebot found in the 
+[bot repo](https://github.com/firemodels/bot). 
+If a test passes then the corresponding bundle is built
+using the same repo hash as was used when running the test.
+Hashes are found in the same location as bundles in the files CFAST_HASH, FDS_HASH and SMOKEVIEW_HASH.
+These hashes are also found in the release title along with the date and time when the commit was made.
+
+
+
+
 
 <!-- comment -->
