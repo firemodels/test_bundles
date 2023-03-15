@@ -13,7 +13,7 @@ These hashes are also found in the release title along with the date and time wh
 
 ### Workflow
 
-The bot and bundle scripts use the github command line tool `gh` to copy files to and from Github releases.
+The bot and bundle scripts use the github command line tool `gh` to upload and download files to and from Github releases.
 If a bot passes, it uploads manuals and repo hashes using a `gh` command such as
 
 ```
