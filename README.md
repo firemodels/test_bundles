@@ -22,6 +22,7 @@ If a bot passes, it uploads manuals and repo hashes using a `gh` command such as
 
 where file is the file that is uploaded and tag is `CFAST_TEST`, `FDS_TEST` or `SMOKEVIEW_TEST` depending on 
 whether the file is for a cfast, fds or smokeview bundle.  Repo hashes are uploaded the same way.
+The `--clobber`` parameter allows uploaded files to be overwritten.
 
 Bundle scripts download hashes and manuals from github releases using a similar `gh` command such as
 
