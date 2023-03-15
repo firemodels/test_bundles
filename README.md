@@ -11,6 +11,17 @@ using the same repo hash as was used when running the test.
 Hashes are found in the same location as bundles in the files CFAST_HASH, FDS_HASH and SMOKEVIEW_HASH.
 These hashes are also found in the release title along with the date and time when the commit was made.
 
+### Workflow
+
+If a bot passes, it copies the manuals and the repo hashes it used to repo using a `gh` command such as
+
+```
+   gh release upload tag file -R github.com/firemodels/test_bundles --clobber
+```
+
+where file is the file that is uploaded and tag is `CFAST_TEST`, `FDS_TEST` or `SMOKEVIEW_TEST` depending on 
+whether the file is a cfast, fds or smokeview manual.
+
 
 
 
