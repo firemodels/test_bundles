@@ -41,8 +41,8 @@ the repo hash and repo revision date. The `gh` command used to do this is
 gh release edit tag -t "title of release" -R github.com/firemodels/test_bundles
 ```
 
-Note, in each `gh` command firemodels could be changed to your user name (assuming you forked the test_bundles repo) to 
-make changes to your forked test_bundles repo rather than the central repo version.
+Note, the `firemodels` parameter in each `gh` command could be changed to your user name (assuming you forked the test_bundles repo) to 
+make changes to your forked test_bundles repo rather than the central repo.
 
 
 
