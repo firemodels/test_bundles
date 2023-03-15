@@ -34,7 +34,7 @@ where file is the file downloaded, tag as before is `CFAST_TEST`, `FDS_TEST` or 
 depending on whether the file is for a cfast, fds or smokeview bundle and directory is the 
 directory where the file is downloaded too.
 
-The release title is modified whenever a bundle is uplooaded to a Github release to indicate
+The release title is modified whenever a bundle is uploaded to a Github release to indicate
 the repo hash and repo revision date. The `gh` command used to do this is 
 
 ```
