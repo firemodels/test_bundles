@@ -34,7 +34,7 @@ File downloads are performed using a similar `gh` command
  gh release download tag -p file -R github.com/firemodels/test_bundles -D directory --clobber
 ```
 
-where file is the file downloaded, ans tag as before is `CFAST_TEST`, `FDS_TEST` or `SMOKEVIEW_TEST`
+where file is the file downloaded, and tag as before is `CFAST_TEST`, `FDS_TEST` or `SMOKEVIEW_TEST`
 depending on whether the file is for a cfast, fds or smokeview bundle and directory is the 
 directory where the file is downloaded too.
 
