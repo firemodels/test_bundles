@@ -16,8 +16,8 @@ These hashes are also found in the release title along with the date and time wh
 
 
 Bot and bundle scripts use the github command line tool `gh` to upload and download files to and from 
-a github repo release.  Bot scripts upload manuals and repo hashes and bundle scripts (if the bot passes all its tests)
-download these files to generate bundles.  
+a github repo release.  Bot scripts upload manuals and repo hashes (if the bot passes all its tests) 
+and bundle scripts download these files to generate bundles.  
 File uploads are peformed using a `gh` command such as
 
 ```
