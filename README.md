@@ -76,11 +76,11 @@ if necessary without changing scripts (for example to access your forked test_bu
 repo version of test_bundles).
 
 ```
+GH_OWNER=firemodels
 GH_REPO=test_bundles
 GH_CFAST_TAG=CFAST_TEST
-GH_OWNER=firemodels
-GH_SMOKEVIEW_TAG=SMOKEVIEW_TEST
 GH_FDS_TAG=FDS_TEST
+GH_SMOKEVIEW_TAG=SMOKEVIEW_TEST
 ```
 
 *   The `firemodels` parameter in each `gh` command above could be changed to your user name (assuming you forked the test_bundles repo) to 
