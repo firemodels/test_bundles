@@ -7,15 +7,18 @@ in this repo contain test bundles and manuals for the fire models
 These programs are tested daily by the scripts cfastbot, firebot and smokebot found in the 
 [bot repo](https://github.com/firemodels/bot). 
 If a test passes then a corresponding bundle is built
-using the same version of the repo that was used to run the test.
-These bundles along with their repo hashes are uploaded to the release section of this (test_bundels) repo. 
+using the same version of the repo as was used to run the test.
+These bundles along with their repo hashes are uploaded to the release section of this (test_bundles) repo. 
 Hashes are store in files named CFAST_HASH, FDS_HASH and SMOKEVIEW_HASH.
 These hashes are also found in the release title along with the date and time when the commit was made.
 
 ### Workflow
 
-The bot and bundle scripts use the github command line tool `gh` to upload and download files to and from Github releases.
-If a bot passes, it uploads manuals and repo hashes using a `gh` command such as
+
+Bot and bundle scripts use the github command line tool `gh` to upload and download files to and from 
+a github repo release.  Bot scripts upload manuals and repo hashes and bundle scripts 
+download these files to generate bundles.  
+File uploads are peformed using a `gh` command such as
 
 ```
    gh release upload tag file -R github.com/firemodels/test_bundles --clobber
@@ -25,17 +28,17 @@ where file is the file that is uploaded and tag is `CFAST_TEST`, `FDS_TEST` or `
 whether the file is for a cfast, fds or smokeview bundle.  Repo hashes are uploaded the same way.
 The `--clobber` parameter allows uploaded files to be overwritten.
 
-Bundle scripts download hashes and manuals from github releases using a similar `gh` command
+File downloads are performed using a similar `gh` command
 
 ```
  gh release download tag -p file -R github.com/firemodels/test_bundles -D directory --clobber
 ```
 
-where file is the file downloaded, tag as before is `CFAST_TEST`, `FDS_TEST` or `SMOKEVIEW_TEST`
+where file is the file downloaded, ans tag as before is `CFAST_TEST`, `FDS_TEST` or `SMOKEVIEW_TEST`
 depending on whether the file is for a cfast, fds or smokeview bundle and directory is the 
 directory where the file is downloaded too.
 
-The release title is modified whenever a bundle is uploaded to a Github release to indicate
+The release title is modified whenever a bundle is uploaded to a Github repo release to indicate
 the repo hash and repo revision date. The `gh` command used to do this is 
 
 ```
