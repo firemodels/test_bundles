@@ -16,8 +16,7 @@ These hashes are also found in the release title along with the date and time wh
 
 Bot and bundle scripts use the github command line tool `gh` to upload and download files to and from 
 a github repo release.  Bot scripts upload manuals and repo hashes (if the bot passes all its tests) 
-and bundle scripts download these files to generate bundles.  
-File uploads are peformed using a `gh` command such as
+and bundle scripts download these files to generate bundles. Files are uploaded using a `gh` command such as
 
 ```
    gh release upload tag file -R github.com/firemodels/test_bundles --clobber
@@ -32,11 +31,11 @@ The `--clobber` parameter allows uploaded files to be overwritten.
 File downloads are performed using a similar `gh` command
 
 ```
- gh release download tag -p file -R github.com/firemodels/test_bundles -D directory --clobber
+ gh release download tag -p file -R github.com/firemodels/test_bundles -D outdir --clobber
 ```
 
 where file is the file downloaded, and tag as before is `CFAST_TEST`, `FDS_TEST` or `SMOKEVIEW_TEST`
-depending on whether the file is for a cfast, fds or smokeview bundle and directory is the 
+depending on whether the file is for a cfast, fds or smokeview bundle.  `outdir` is the 
 directory where the file is downloaded too.
 
 ### Changing a Release Title
