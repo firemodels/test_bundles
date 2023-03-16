@@ -6,7 +6,7 @@ in this repo contain test bundles and manuals for the fire models
 [smokeview](https://github.com/firemodels/test_bundles/releases/tag/SMOKEVIEW_TEST).
 These programs are tested daily by the scripts cfastbot, firebot and smokebot found in the 
 [bot repo](https://github.com/firemodels/bot). 
-If a test passes then a corresponding bundle is built
+If a test passes a corresponding bundle is built
 using the same version of the repo as was used to run the test.
 These bundles along with their repo hashes are uploaded to the release section of this (test_bundles) repo. 
 Hashes are store in files named CFAST_HASH, FDS_HASH and SMOKEVIEW_HASH.
