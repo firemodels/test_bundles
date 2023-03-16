@@ -69,7 +69,7 @@ where file is the asset or bundle being deleted .  The `-y` parameter is specifi
 
 *   The first time the `gh` command is used the user will be asked to authenticate it use with a github repo by typing
 the `gh auth login` command.  The command will output a code and ask the user to login to their github account to 
-enter that code.  `gh` may then be used to access the user's github repos once the code is entered.  
+enter that code.  `gh` may then be used to access the user's github repos once the code is entered. 
 
 *   The `firemodels` parameter in each `gh` command above could be changed to your user name (assuming you forked the test_bundles repo) to 
 make changes to your forked test_bundles repo rather than the central repo.
