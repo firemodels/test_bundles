@@ -45,7 +45,22 @@ the repo hash and repo revision date. The `gh` command used to do this is
 gh release edit tag -t "title of release" -R github.com/firemodels/test_bundles
 ```
 
-Note, the `firemodels` parameter in each `gh` command could be changed to your user name (assuming you forked the test_bundles repo) to 
+To list the assests in a release using a `gh` command of the form
+
+```
+gh release view tag  -R github.com/firemodels/test_bundles
+```
+
+The `git release view` command is used to generate a list of files to be be deleted (perhaps bundles generated 
+the day before).  To delete an asset or bundle use a `gh` command of the form
+
+```
+gh release delete-asset tag file -R github.com/firemodels/test_bundles -y
+```
+
+where file is the asset or bundle being deleted .  The `-y` parameter is specified to confirm that the file should be deleted.
+
+Note, the `firemodels` parameter in each `gh` command above could be changed to your user name (assuming you forked the test_bundles repo) to 
 make changes to your forked test_bundles repo rather than the central repo.
 
 
