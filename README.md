@@ -67,13 +67,13 @@ where file is the asset or bundle being deleted .  The `-y` parameter is specifi
 
 ### Notes
 
-*   The first time `gh` command is used you will be asked to authenticate its use with a github repo by typing
-`gh auth login`.  This command will output a code and ask you to login to you github account to 
+*   The first time `gh` is used you will be asked to authenticate by typing
+`gh auth login`.  This command will output a code and ask you to login to your github account to 
 enter that code.  `gh` may then be used to access your github repos.
 
-*  The bot and bundle scripts using `gh` use several bash environment variables to access your github repos so that changes can be made
+*  The bot and bundle scripts in this repo using `gh` use several bash environment variables to access your github repos so that changes can be made
 if necessary without changing scripts (for example to access your forked test_bundles repo when testing scripts instead of the central
-repo version of test_bundles).
+repo version).
 
 ```
 GH_OWNER=firemodels
