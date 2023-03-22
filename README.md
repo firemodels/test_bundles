@@ -6,7 +6,7 @@ in this repo contain test bundles and manuals for the fire models
 [smokeview](https://github.com/firemodels/test_bundles/releases/tag/SMOKEVIEW_TEST).
 These programs are tested daily by the scripts cfastbot, firebot and smokebot found in the 
 [bot repo](https://github.com/firemodels/bot). 
-The bots upload manuals, repo hashes and version strings to a [github release in this repository](https://github.com/firemodels/test_bundles/releases)
+These bots upload manuals, repo hashes and version strings to a [github release in this repository](https://github.com/firemodels/test_bundles/releases)
 if they do not find any errors.
 Another set of scripts then use these repo hashes and version strings to build bundles and upload them 
 to the same github release.
