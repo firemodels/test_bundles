@@ -14,7 +14,7 @@ Hashes are store in files named CFAST_HASH, FDS_HASH and SMOKEVIEW_HASH.
 These hashes are also found in the release title along with the date and time when the commit was made.
 Since manuals and bundles are uploaded to the release at different times by different scripts another set 
 of hash and version files are uploaded so that it is clear what hash was used to generated the manuals.
-These files have the hash appended to the file name, for example, `SMV_HASH_MANUALS_937c027b6`.
+These files have MANUALS and the hash appended to the file name, for example, `SMV_HASH_MANUALS_937c027b6`.
 
 ### Uploading Files
 
