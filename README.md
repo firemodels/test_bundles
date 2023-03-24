@@ -5,7 +5,7 @@ in this repo contain test bundles and manuals for the fire models
 [fds](https://github.com/firemodels/test_bundles/releases/tag/FDS_TEST), and the visualization program
 [smokeview](https://github.com/firemodels/test_bundles/releases/tag/SMOKEVIEW_TEST).
 The manuals and repo hashes/version strings are uploaded to a [github release](https://github.com/firemodels/test_bundles/releases)
-whenever bots found in the 
+whenever bots (cfastbot, firebot and smokebot) found in the 
 [bot repo](https://github.com/firemodels/bot) complete without error. The bundles are built
 and uploaded to the same release by separate bundle scripts.
 The bundle scripts use the uploaded repo hashes and version strings to build bundles and upload them 
