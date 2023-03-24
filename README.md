@@ -6,10 +6,9 @@ in this repo contain test bundles and manuals for the fire models
 [smokeview](https://github.com/firemodels/test_bundles/releases/tag/SMOKEVIEW_TEST).
 The manuals and repo hashes/version strings are uploaded to a [github release](https://github.com/firemodels/test_bundles/releases)
 whenever the corresponding bot (cfastbot, firebot and smokebot) found in the 
-[bot repo](https://github.com/firemodels/bot) completes without error. The bundles are built
+[bot repo](https://github.com/firemodels/bot) completes without error. The bundles are then built
 and uploaded to the same release by separate bundle scripts.
-The bundle scripts use the uploaded repo hashes and version strings to build bundles and upload them 
-to the same github release.
+These scripts use the uploaded repo hashes and version strings to build the bundles.
 Hashes and repo version strings are stored in files named CFAST_INFO.txt, FDS_INFO.txt and SMOKEVIEW_INFO.txt.
 These strings are also found in the release title along with the date and time when the commit was made.
 
