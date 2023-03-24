@@ -8,7 +8,7 @@ These programs are tested daily by the scripts cfastbot, firebot and smokebot fo
 [bot repo](https://github.com/firemodels/bot). 
 These bots upload manuals, repo hashes and version strings 
 to a [github release in this repository](https://github.com/firemodels/test_bundles/releases)
-if they do not find any errors.
+whenever they complete without finding errors.
 Another set of scripts then use these repo hashes and version strings to build bundles and upload them 
 to the same github release.
 Hashes and repo version strings are stored in files named CFAST_INFO.txt, FDS_INFO.txt and SMOKEVIEW_INFO.txt.
