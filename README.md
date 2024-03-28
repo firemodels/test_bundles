@@ -1,4 +1,8 @@
 # CFAST, FDS and Smokeview test bundles
+
+> [!WARNING]
+> These bundles come with the usual disclaimer: **These bundles have passed verification testing but _not_ validation testing**.  The bundles are roughly equivalent to a maintenance release with the caveat that changes to the source worthy of a major or minor release may have been made and not yet thoroughly tested.
+
 The [releases](https://github.com/firemodels/test_bundles/releases)
 in this repo contain test bundles and manuals for the fire models
 [cfast](https://github.com/firemodels/test_bundles/releases/tag/CFAST_TEST) and
